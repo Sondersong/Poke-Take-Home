@@ -1,3 +1,5 @@
+
+
 <template>
   <h1>I live above</h1>
   <NuxtPage />
