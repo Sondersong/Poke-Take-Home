@@ -4,6 +4,7 @@
   <h2>I live below</h2>
 </template>
 
+
 <style lang="scss">
 @use "~/assets/scss/main.scss";
 </style>
