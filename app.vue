@@ -1,9 +1,8 @@
 
 
 <template>
-  <h1>I live above</h1>
+  <Navbar />
   <NuxtPage />
-  <h2>I live below</h2>
 </template>
 
 
