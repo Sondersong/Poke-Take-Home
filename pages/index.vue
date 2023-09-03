@@ -1,10 +1,10 @@
 <script setup>
-  // const {data} = await useFetch('/api/test')
-  const searchInput = useState('searchInput')
-  const exampleArr = ref(['Cheddar', 'Chalupa', 'Chimney'])
+const searchInput = ref(useState('searchInput', () => 'clefairy'))
+const { data: pokemonList } = await useFetch('/api/pokemonList')
+const { data: singlePoke } = await useFetch('/api/pokemonStats', { params: { name: searchInput } })
 </script>
 
 <template>
   <h1>This is the home page</h1>
-  <Card v-for="name in exampleArr" :name="name"/>
+  <Card v-for="arr in pokemonList" :name="arr.name" />
 </template>

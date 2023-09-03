@@ -1,8 +1,9 @@
 <script setup>
-  const props = defineProps(['name'])
+const props = defineProps(['name'])
+const { data: pokeFacts } = await useFetch('/api/pokemonStats', { params: { name: props.name } })
 </script>
 
 <template>
-  <h1>This is a card</h1>
-  <p>{{ props.name }}</p>
+  <h1>{{ props.name }}</h1>
+  <img :src="pokeFacts.sprites.front_default"/>
 </template>
