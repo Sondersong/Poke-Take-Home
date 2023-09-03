@@ -1,6 +1,6 @@
-import axios from 'axios';
-// import { setupCache } from 'axios-cache-interceptor';
-// const axios = setupCache(Axios)
+import Axios from 'axios';
+import { setupCache } from 'axios-cache-interceptor';
+const axios = setupCache(Axios)
 export default defineEventHandler(async (event) => {
     let params = getQuery(event)
     const res = await axios( {

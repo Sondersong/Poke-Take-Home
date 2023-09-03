@@ -2,6 +2,6 @@
 const searchInput = useState('searchInput')
 </script>
 <template>
-  <h1>Poké-pedia</h1>
+  <h1><NuxtLink to="/">Poké-pedia</NuxtLink></h1>
   <input placeholder="Search" v-model="searchInput" />
 </template>
