@@ -1,6 +1,4 @@
 import axios from 'axios';
-// import { setupCache } from 'axios-cache-interceptor';
-// const axios = setupCache(Axios)
 export default defineEventHandler(async (event) => {
     const res = await axios( {
         method: 'get',
