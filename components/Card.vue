@@ -6,7 +6,9 @@
 </template>
 
 <script setup>
-const props = defineProps(['name'])
-const { data: pokeFacts } = await useFetch('/api/pokemonStats', { params: { name: props.name } })
-const pageLink = `/pokemon/${props.name}`
+const props = defineProps(["name"]);
+const { data: pokeFacts } = await useFetch("/api/pokemonStats", {
+  params: { name: props.name },
+});
+const pageLink = `/pokemon/${props.name}`;
 </script>

@@ -4,6 +4,8 @@
 </template>
 
 <script setup>
-const searchInput = ref(useState('searchInput', () => 'clefairy'))
-const { data: pokemonList } = await useFetch('/api/pokemonList')
+const searchInput = ref(useState("searchInput", () => ""));
+const { data: pokemonList } = ref(
+  await useFetch("/api/pokemonList", { params: { name: props.name } })
+);
 </script>

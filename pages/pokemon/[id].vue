@@ -4,11 +4,16 @@
   <ul>
     <li>Height: {{ pokeFacts.height }}ft.</li>
     <li>Weight: {{ pokeFacts.weight }}lbs.</li>
-    <li>Abilities: <span v-for="obj in pokeFacts.abilities">{{ obj.ability.name }}, </span></li>
+    <li>
+      Abilities:
+      <span v-for="obj in pokeFacts.abilities">{{ obj.ability.name }}, </span>
+    </li>
   </ul>
 </template>
 
 <script setup>
-const route = useRoute()
-const { data: pokeFacts } = await useFetch('/api/pokemonStats', { params: { name: route.params.id } })
+const route = useRoute();
+const { data: pokeFacts } = await useFetch("/api/pokemonStats", {
+  params: { name: route.params.id },
+});
 </script>

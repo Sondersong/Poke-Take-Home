@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-const searchInput = useState('searchInput')
+const searchInput = useState("searchInput");
 </script>
