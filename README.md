@@ -6,7 +6,7 @@ _To get started, simply install the neccessary dependencies, build the applicati
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Sondersong/Poke-Take-Home
+   git clone https://github.com/Sondersong/Poke-Take-Home.git
    ```
 2. Install NPM packages
    ```sh
