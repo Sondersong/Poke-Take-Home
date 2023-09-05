@@ -1,6 +1,8 @@
 <template>
-  <Navbar />
-  <NuxtPage />
+  <div id="app">
+    <Navbar />
+    <NuxtPage />
+  </div>
 </template>
 
 <style lang="scss">

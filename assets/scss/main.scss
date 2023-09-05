@@ -1,6 +1,202 @@
+//scss reset
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
-#test {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+#app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 30px;
+  #navbar {
+    #homeButton {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      // border: solid black 2px;
+      // padding: 6px;
+      // border-radius: 8px;
+      #right {
+        transform: scaleX(-1);
+      }
+      img {
+        margin: 0px 10px;
+        width: 40px;
+        // height: 40px;
+        // object-fit: cover;
+      }
+    }
+    input {
+      margin: 10px;
+    }
+    padding: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  #homePage {
+    width: 60%;
+    #cardGrid {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 20px;
+      .card {
+        img {
+          border-bottom: 2px solid black;
+        }
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        max-width: 160px;
+        width: 25%;
+        min-width: 120px;
+        height: 200px;
+        margin: 20px;
+        border: 2px black solid;
+        border-radius: 8px;
+      }
+    }
+  }
+  #moreInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    #sideCard {
+      width: 60%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      margin: 20px;
+      border: 2px black solid;
+      border-radius: 8px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  h1,
+  h2,
+  li,
+  p,
+  a {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
   h1 {
-    color: red 
+    font-size: x-large;
+  }
+  h2 {
+    font-size: medium;
+    text-align: center;
   }
 }
