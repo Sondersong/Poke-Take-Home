@@ -1,9 +1,11 @@
 <template>
   <h1>This is the home page</h1>
-  <Card v-for="arr in pokemonList" :name="arr.name" />
+  <div v-for="arr in pokemonList">
+    <Card :name="arr.name" />
+  </div>
 </template>
 
 <script setup>
-const searchInput = ref(useState("searchInput", () => ""));
-const { data: pokemonList } = await useFetch("/api/pokemonList");
+const searchInput = useState("searchInput", () => "");
+const { data: pokemonList } = await useFetch("/api/pokemonList", {params: {search: searchInput}});
 </script>
